@@ -1,4 +1,3 @@
-import kotlin.math.max
 import kotlin.math.min
 
 fun main() {
@@ -9,14 +8,29 @@ fun main() {
     val b = readLine()!!.toInt()
     print("c = ")
     val c = readLine()!!.toInt()
-    sumMax(a, b, c)
+    var list = listOf<Int>(a, b, c)
+    println(list.sorted())
+    println(list)
+//    funFilter(a, b, c, 3)
+//    if (a == b && b == c) {
+//        println(a)
+//        println(b)
+//    }
+//    else if ((a == b && b != c) || (a == c && b != c) || (c == b && a != c)) {
+//        println(a)
+//        println(b)
+//    }
+//    else {
+//        if (a > minimum) println(a)
+//        if (b > minimum) println(b)
+//        if (c > minimum) println(c)
+//    }
 }
 
-fun sumMax(a: Int, b: Int, c: Int) {
-    val kichigi: Int = min(min(a, b), c)
-    if (a > kichigi && b > kichigi)
-        println("$a \n$b")
-    else if (a > kichigi && c > kichigi)
-        println("$a \n$c")
-    else println("$b \n$c")
+private fun <E> List<E>.add(e: E) {
+
+}
+
+fun funFilter(a: Int, b: Int, c: Int, i: Int) {
+
 }
