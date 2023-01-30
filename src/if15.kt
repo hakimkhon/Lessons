@@ -9,8 +9,14 @@ fun main() {
     val b = readLine()!!.toInt()
     print("c = ")
     val c = readLine()!!.toInt()
-    val max = max(max(a, b), c)
-    val min = min(min(a, b), c)
-    val urta = a + b + c - max - min
-    print("$max \n$urta")
+    sumMax(a, b, c)
+}
+
+fun sumMax(a: Int, b: Int, c: Int) {
+    val kichigi: Int = min(min(a, b), c)
+    if (a > kichigi && b > kichigi)
+        println("$a \n$b")
+    else if (a > kichigi && c > kichigi)
+        println("$a \n$c")
+    else println("$b \n$c")
 }
