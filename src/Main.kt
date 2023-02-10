@@ -15,6 +15,8 @@ fun main() {
     val s0 = x.rem(y)
     val max = x.coerceAtLeast(y)
     val min = x.coerceAtMost(y)
+//    var pass: String = "Password"
+//    if (pass instansof String) //parolning toifasi String bo'lganda ishlaydi
 //    x.plusAssign(y) x+=y
     println(x.dec()) //x++
     println(x.inc()) //y--
@@ -42,3 +44,4 @@ fun main() {
     println(str)
 
 }
+
